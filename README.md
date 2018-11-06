@@ -8,3 +8,4 @@ Service called in **poc-zipkin-service** (https://github.com/vagner-nascimento/p
 
 # Utils
 - Zipkin Official Web Site: https://zipkin.io/
+- Zipkin e Sleuth video tutorial: https://www.youtube.com/watch?v=dzr0CWjC8sg
