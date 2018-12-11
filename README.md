@@ -1,11 +1,12 @@
-# POC Zipkin with Spring Cloud
+# POC Zipkin with Spring Cloud and Rabbit MQ
 Service called in **poc-zipkin-service** (https://github.com/vagner-nascimento/poc-zipkin-service)
 
 # How to run
 - Build and run application using gradle wrapper
-- End-point: http://localhost:8081/zipkin/customers/salaries/{function}
-- The only existent function is **developer** 
+
+- End-point: http://localhost:8081/zipkin/customers 
 
 # Utils
-- Zipkin Official Web Site: https://zipkin.io/
-- Zipkin e Sleuth video tutorial: https://www.youtube.com/watch?v=dzr0CWjC8sg
+- Zipkin: https://zipkin.io/
+
+- Rabbit MQ: https://www.rabbitmq.com/

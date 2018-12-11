@@ -1,13 +1,14 @@
 package com.vagner.zipkin;
 
-import brave.sampler.Sampler;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 @Getter
 @SpringBootApplication
 public class Application {
@@ -16,12 +17,7 @@ public class Application {
     }
 
     @Bean
-    public Sampler getSampler() {
-        return Sampler.ALWAYS_SAMPLE;
-    }
-
-    @Bean
-    public RestTemplate getRestTemplate(RestTemplateBuilder builder) {
+    public RestTemplate restTemplate(RestTemplateBuilder builder) {
         return builder.build();
     }
 }
